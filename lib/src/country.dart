@@ -81,6 +81,7 @@ class Country {
     if (query.startsWith("+")) {
       _query = query.replaceAll("+", "").trim();
     }
+    print('phoneCode: $phoneCode - query: $_query');
     return phoneCode.startsWith(_query.toLowerCase()) ||
         name.toLowerCase().startsWith(_query.toLowerCase()) ||
         countryCode.toLowerCase().startsWith(_query.toLowerCase()) ||
